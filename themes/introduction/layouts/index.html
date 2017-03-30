@@ -1,0 +1,67 @@
+{{ partial "header.html" . }}
+
+<div class="section" id="top"> <!-- Where all the awesome begins -->
+
+<div class="hero is-{{ .Site.Params.introheight }}">
+<!-- Possible hero-head not used -->
+    <!-- Super sweet Hero body title -->
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <!-- Title and tagline -->
+            <h1 class="bold-title one">Hi, I'm {{ .Site.Params.firstname }}.</h1>
+            <h3 class="subtitle is-3  two">{{ .Site.Params.tagline }}</h3>
+            <!-- End title and tagline -->
+            <!-- Some social icons -->
+            <div class=" three">{{ partial "social.html" . }}</div>
+            <!-- End top social icons -->
+        </div>
+    </div> <!-- Hero body title end -->
+    <!-- Hero foot has nav bar -->
+<!--     <div class="hero-foot  three">
+    <hr>
+    <nav class="nav-center">
+        <a class="nav-item" href="#about">About</a>  
+        {{ if .Site.Params.showprojects }}
+        <a class="nav-item" href="#projects">Projects</a>  
+        {{ end }}
+        {{ if .Site.Params.showblog }}
+        <a class="nav-item" href="#blog">Blog</a>  
+        {{ end }}
+        <a class="nav-item" href="#workwithme">Work With Me</a> 
+        <a class="nav-item" href="#contact">Contact</a> 
+    </nav>
+    <hr>
+    </div> --><!-- Done with nav bar -->
+</div><!-- Done with Hero -->
+</div><!-- End of top section -->
+
+<!-- Everything below fades in three! -->
+<div class="section no-padding  three">
+
+
+<div class="container"><hr></div>
+
+
+<!-- Nice clean finish -->
+{{ partial "footer.html" . }}
+<!-- Footer done! -->
+</div><!-- End of fade in three section -->
+<!-- Where all the awesome ends. Aww. -->
+
+<!-- Cool scroll effect from this guy: https://gist.github.com/flesler/ -->
+<!-- Include jQuery from somewhere, must use version 1.8 or above -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include latest jquery.scrollTo, can download from https://github.com/flesler/jquery.scrollTo/releases -->
+<script type="application/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+<!-- Initialize the plugin, the contents of the script can be inlined here, of course -->
+<script type="text/javascript" src={{ "js/init.js" | relURL }}></script>
+<script>
+  // Bind to the click of all links with a #hash in the href
+  $('a[href^="#"]').click(function(e) {
+    // Prevent the jump and the #hash from appearing on the address bar
+    e.preventDefault();
+    // Scroll the window, stop any previous animation, stop on user manual scroll
+    // Check https://github.com/flesler/jquery.scrollTo for more customizability
+    $(window).stop(true).scrollTo(this.hash, {duration:500, interrupt:false});
+  });
+</script>
