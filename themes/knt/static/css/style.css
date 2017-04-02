@@ -5,10 +5,13 @@ body {
 }
 
 .content {
-	min-height: 80%;
-	min-height: 80vh;
-	display: block;
+	min-height: 90%;
+	min-height: 90vh;
+	display: flex;
 	text-align: center;
+	position: relative;
+	align-items: center;
+	justify-content: center;
 }
 
 .footer {
@@ -16,11 +19,9 @@ body {
 	padding: 0;
 	display: block;
 	text-align: center;
+	max-height: 10%;
 }
 
-.intro-body {
-	margin-top: 7em;
-}
 .intro-title {
 	font-family: sans-serif, Helvetica Neue, Helvetica, raleway;
 	font-size: 7em;

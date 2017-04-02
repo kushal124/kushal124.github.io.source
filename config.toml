@@ -9,7 +9,7 @@ contentdir          = "content"
 layoutdir           = "layouts"
 publishdir          = "public"
 # disqusshortname   = "xxx" # Enable Disqus for comments
-# googleAnalytics   = "UA-43478621-1"
+googleAnalytics   = "UA-43478621-1"
 
 [permalinks]
 fixed = ":title/"
