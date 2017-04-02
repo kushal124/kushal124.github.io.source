@@ -8,7 +8,7 @@ canonifyurls        = true
 contentdir          = "content"
 layoutdir           = "layouts"
 publishdir          = "public"
-# disqusshortname   = "xxx" # Enable Disqus for comments
+disqusshortname   = "kushal-khandelwal" # Enable Disqus for comments
 googleAnalytics   = "UA-43478621-1"
 
 [permalinks]
