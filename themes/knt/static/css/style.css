@@ -1,0 +1,37 @@
+body {
+	font-family: sans-serif, Helvetica Neue, Helvetica, Raleway;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+.content {
+	min-height: 80%;
+	min-height: 80vh;
+	display: block;
+	text-align: center;
+}
+
+.footer {
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+
+.intro-body {
+	margin-top: 7em;
+}
+.intro-title {
+	font-family: sans-serif, Helvetica Neue, Helvetica, raleway;
+	font-size: 7em;
+	font-weight: 500;
+}
+
+.social-icons {
+	font-size: 2em;
+	display: block;
+	box-sizing: inherit;
+	line-height: 3em;
+	letter-spacing: 1rem;
+	color: inherit;
+}

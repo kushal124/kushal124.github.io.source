@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+
+<body lang="{{ .Site.Params.lang }}">
+  <div style='background:{{ .Site.Params.topbarcolor }}; width:100%; height:3px'></div>
+  
+  <div class="container">
+    <div class="row content" id="top">
+      <div class="col-md-12 content-center">
+          <div class="row intro-body">
+                  <h1 class="intro-title">Hi, I'm {{ .Site.Params.firstname }}.</h1>
+                  <h3 class="intro-sub-title">{{ .Site.Params.tagline }}</h3>
+                  <div class="intro-social">{{ partial "social.html" . }}</div>
+          </div>
+      </div>
+    </div>
+
+  <!-- Everything below fades in three! -->
+  <div class="row">
+    <hr>
+    
+    {{ partial "footer.html" . }}
+    <!-- Footer done! -->
+  </div>
+  </div>
+
+</body>
