@@ -14,6 +14,7 @@ body {
 	justify-content: center;
 }
 
+
 .footer {
 	margin: 0;
 	padding: 0;
@@ -36,3 +37,42 @@ body {
 	letter-spacing: 1rem;
 	color: inherit;
 }
+
+
+.blog-main {
+	display: block;
+	font-size: 2rem;
+}
+
+.title {
+	font-size: 28px;
+	text-transform: capitalize;
+}
+
+.title a {
+	text-decoration: none;
+	color: #000;
+}
+
+.strong-title {
+	font-weight: 500;
+}
+
+.post-data {
+	font-size: 14px;
+	color: gray;
+	line-height: 0;
+}
+
+.post-content {
+	margin-top:5%;
+	font-size: 14px;
+}
+
+.blog-share {
+	font-size: 14px;
+	margin-top: 12px;
+	line-height: 0;
+}
+
+

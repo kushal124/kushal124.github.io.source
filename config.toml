@@ -43,7 +43,7 @@ googleplus    = ""
 showblog        = false # Show Blog section on home page
 showallposts    = false # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
 showlatest      = false # Show latest blog post summary
-sharebuttons    = false # On post pages, show share this social buttons
+sharebuttons    = true # On post pages, show share this social buttons
 
 showprojects    = false # Show Projects section on home page
 
