@@ -3,10 +3,11 @@
 <body lang="{{ .Site.Params.lang }}">
     <div style='background:{{ .Site.Params.topbarcolor }}; width:100%; height:3px'>
     </div>
+
     {{ partial "navbar.html" }}
     <div class="container">
         <div class="row blog-main">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
                 <div class="row">
                     <h2 class="title strong-title">
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -43,7 +44,7 @@
                     {{ .Content }}
                 </div><!-- End blog post content -->
                         
-                <div class="disqus">
+                <div class="row disqus">
                     {{ template "_internal/disqus.html" . }}
                 </div>
                 <div class="row">

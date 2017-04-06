@@ -25,15 +25,15 @@ body {
 
 .intro-title {
 	font-family: sans-serif, Helvetica Neue, Helvetica, raleway;
-	font-size: 7em;
+	font-size: 7rem;
 	font-weight: 500;
 }
 
 .social-icons {
-	font-size: 2em;
+	font-size: 2rem;
 	display: block;
 	box-sizing: inherit;
-	line-height: 3em;
+	line-height: 3rem;
 	letter-spacing: 1rem;
 	color: inherit;
 }
@@ -73,6 +73,14 @@ body {
 	font-size: 14px;
 	margin-top: 12px;
 	line-height: 0;
+}
+
+.navbar-default {
+	background-color: white;
+}
+
+.navbar-brand-fix {
+	padding-left: 0px
 }
 
 
